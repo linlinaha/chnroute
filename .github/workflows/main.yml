@@ -1,6 +1,7 @@
 name: update-chnroute-gfwlist
 on:
-  - push
+  schedule:
+    - cron: '50 * * * *'
 jobs:
   fetch-and-push:
     runs-on: ubuntu-latest
